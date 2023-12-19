@@ -1,64 +1,59 @@
-section {
-  padding: 0 15px;
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+}
+label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  color: #2e2f42;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.64px;
 }
 
 input {
+  padding: 8px 16px;
   width: 360px;
-  margin-top: 8px;
   height: 40px;
   border-radius: 4px;
   border: 1px solid #808080;
+  height: 40px;
 }
+
 input:hover {
-  border-color: #000000;
+  border-radius: 4px;
+  border: 1px solid #000;
+}
+
+input:placeholder-shown {
+  color: #2e2f42;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.64px;
 }
 
 textarea {
-  width: 100%;
   resize: none;
-  margin-top: 8px;
-  height: 80px;
-  border-radius: 4px;
-  border: 1px solid #808080;
-}
-textarea:hover {
-  border-color: #000000;
+  width: 360px;
 }
 
-.feedback-form {
-  width: 408px;
-  padding: 24px;
-  box-sizing: border-box;
-}
-
-.feedback-form label {
-  width: 100%;
-  display: block;
-  margin-bottom: 8px;
-  color: #2e2f42;
-
-  font-family: Montserrat;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 1.5em; /* 150% */
-  letter-spacing: 0.64px;
-}
-.feedback-form button {
+button {
+  width: 95px;
   padding: 8px 16px;
-  background-color: #4e75ff;
   border-radius: 8px;
   border: none;
   color: #fff;
-
-  font-family: Montserrat;
   font-size: 16px;
-  font-style: normal;
   font-weight: 500;
-  line-height: 1.5em; /* 150% */
+  line-height: 24px; /* 150% */
   letter-spacing: 0.64px;
+  cursor: pointer;
+  background-color: #4e75ff;
 }
 
-.feedback-form button:hover {
+button:hover {
   background-color: #6c8cff;
 }
